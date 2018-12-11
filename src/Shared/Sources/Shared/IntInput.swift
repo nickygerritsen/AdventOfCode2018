@@ -21,7 +21,8 @@ extension Int: Input {
             stringToParse = contents.dropFirst()
         } else {
             modifier = 1
-            stringToParse = contents[contents.startIndex...contents.endIndex]
+            let newContents = contents.trimmingCharacters(in: .whitespacesAndNewlines)
+            stringToParse = newContents[newContents.startIndex..<newContents.endIndex]
         }
 
         if let number = Int(stringToParse) {
