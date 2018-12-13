@@ -2,13 +2,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "Day12",
+    name: "Day13",
     dependencies: [
         .package(path: "../Shared")
     ],
     targets: [
         .target(
-            name: "Day12",
+            name: "Day13",
             dependencies: ["Shared"]),
     ]
 )
